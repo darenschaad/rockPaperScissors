@@ -37,4 +37,25 @@ public class AppTest extends FluentTest {
     App testApp = new App();
     assertEquals(true, testApp.checkWinner("Paper", "Rock"));
   }
+  @Test
+  public void defineWinner_playerOneWins() {
+    App testApp = new App();
+    assertEquals("Player one wins", testApp.defineWinner("Rock", "Scissors"));
+  }
+  @Test
+  public void defineWinner_playerTwoWins() {
+    App testApp = new App();
+    assertEquals("Player two wins", testApp.defineWinner("Paper", "Scissors"));
+  }
+  @Test
+  public void defineWinner_draw() {
+    App testApp = new App();
+    assertEquals("Tie game", testApp.defineWinner("Paper", "Paper"));
+  }
+  @Test
+  public void computerChooses_shouldBeAString_true() {
+    App testApp = new App();
+    String computerChoice =  testApp.computerChooses();
+    assertEquals(true, computerChoice instanceof String);
+  } 
 }

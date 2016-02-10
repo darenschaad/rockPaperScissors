@@ -1,12 +1,29 @@
-<h1>Scrabble Word Value App</h1>
+<h1>Rock Paper Scissors Game</h1>
 
-<p>Enter a word and we'll give you the value for your awesome Scrabble game!</p>
+<p>Take your pick, see if you can beat the computer...</p>
 
 <form action='/detector' method='get'>
-  <div class="form-group">
-    <label for="word">Word</label>
-    <input id="word" name="word" class="form-control" type="text">
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" value="Rock" >
+      Rock
+    </label>
   </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" value="Paper">
+      Paper
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" value="Scissors" >
+      Scissors
+    </label>
+  </div>
+  <button type="submit" name="button">Play</button>
+</form>
 
-  <button type="submit" class="btn btn-info">Calculate</button>
+
+  </div>
 </form>
