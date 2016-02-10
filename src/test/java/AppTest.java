@@ -32,4 +32,9 @@ public class AppTest extends FluentTest {
     App testApp = new App();
     assertEquals(true, testApp.checkWinner("Scissors", "Paper"));
   }
+  @Test
+  public void checkWinner_paperBeatsRock_true() {
+    App testApp = new App();
+    assertEquals(true, testApp.checkWinner("Paper", "Rock"));
+  }
 }
